@@ -1,14 +1,18 @@
 import './App.css';
 import Banner from './Banner.jsx';
 import Exhibit from './Exhibit.jsx';
+import Address from './Address.jsx';
 
 function App() {
   return (
     <div className="App">
       <Banner bannerText={"Sextant"} />
-      <Exhibit name={"Exhibit Title"}>
-        <p>ABC</p>
-        <p>DEF</p>
+      <Exhibit name={"IPv4 Address"}>
+          <Address addressType="IPv4" />
+      </Exhibit>
+
+      <Exhibit name={"IPv6 Address"}>
+          <Address addressType="IPv6" />
       </Exhibit>
     </div>
   );

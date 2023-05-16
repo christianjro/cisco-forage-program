@@ -21,4 +21,12 @@ After successfully setting up the development environment in Task 1, it's time t
 
 ### Objective:
 
-To achieve my goal, I will carefully consider the colors, styles, and layout that best showcase the networking information. I will focus on creating reusable React components that can handle different data points, enhancing the system's extensibility. Additionally, I will make necessary housekeeping changes, such as updating the website's title and streamlining the workspace. By delivering a well-designed frontend, I aim to contribute to the development of the Sextant dashboard, which will provide field technicians with a comprehensive overview of their systems, with a particular emphasis on IP and latency metrics.
+To achieve my goal, I will carefully consider the colors, styles, and layout that best showcase the networking information. I will focus on creating reusable React components that can handle different data points, enhancing the system's extensibility. Additionally, I will make necessary housekeeping changes, such as updating the website's title and streamlining the workspace. By delivering a well-designed front-end, I aim to contribute to the development of the Sextant dashboard, which will provide field technicians with a comprehensive overview of their systems, with a particular emphasis on IP and latency metrics.
+
+## Task 3: Display the User's Public IP
+
+### Background: 
+The Sextant dashboard development involves understanding two types of IP addresses: IPv4 and IPv6. IPv4 addresses are commonly used and obtained through dynamic allocation or static assignment. IPv6 addresses offer a larger address space and can be obtained through autoconfiguration or manual assignment. When displaying IP addresses in the dashboard, clarity and organization are key. 
+
+### Objective: 
+To accomplish the task, I utilized the ipify API in my solution. I created a component that makes an HTTP request to the ipify API immediately upon mounting. The component is designed to accept a prop that determines whether it should request an IPv4 address or an IPv6 address. By leveraging the Fetch API, I retrieved the necessary data from the ipify API and surfaced it to the user. The component effectively displays the user's public IP address based on the specified IP version. To integrate this component into the Sextant dashboard, I added two instances of the component to the website. Each instance is wrapped in one of the container components previously created, ensuring proper organization and presentation.
